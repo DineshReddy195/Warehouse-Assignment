@@ -1,70 +1,22 @@
-# Getting Started with Create React App
+# Warehouse Assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+JSON server has been installed and it's started using command json-server --watch db.json --port 5001.
 
-## Available Scripts
+1) A file named db.json is created, in that file data is given in object format {"warehouse":[{}]}. So in that object a property warehouse is given and a value of that property is an array, we can pass any number of objects in that array.
+2) Install react-router-dom using command npm install react-router-dom
+3) In index.js wrap <App/> Component in <BrowserRouter><App/><BrowserRouter/>
+4) In App.js file import Routes, Route from react-router-dom.
+5) In src, Create a folder named Components in that folder create another folder called WarehouseList.
+6) In Warehouselist folder create a file called WarehousehouseList.
+7) Use data from JSON server in that WarehouseList Component.
+![warehose-2](https://github.com/DineshReddy195/Warehouse-task/assets/87859772/389bd330-fa22-4e25-858d-b8b593db1c6e)
+![Warehouse-1](https://github.com/DineshReddy195/Warehouse-task/assets/87859772/d4251c8b-8093-4cbe-9af5-4813832e9bab)
+8) If we click on view details it should show details about that warehouse.
+![Warehouse-details](https://github.com/DineshReddy195/Warehouse-task/assets/87859772/587b27d4-ec43-4fbe-b044-fcef38dbcc99)
+9) On click of edit button, we need to update details in form and click on save button
+   ![Warehouse-details-updating](https://github.com/DineshReddy195/Warehouse-task/assets/87859772/b969ecd4-2e05-4a31-b54d-557fbbb5cac7)
+10) On Click of save button, data will be updated in UI and also in JSON server.
+![Warehouse-details-updated](https://github.com/DineshReddy195/Warehouse-task/assets/87859772/0e400498-6767-4534-987f-77f2a3e3f76a)
+11) Finally on selecting options from drop down and entering no:of suare feets in search option, data will be filtered.
+    ![Warehouse-filter](https://github.com/DineshReddy195/Warehouse-task/assets/87859772/723a22f2-de6d-4d69-94ac-62836485c643)
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
